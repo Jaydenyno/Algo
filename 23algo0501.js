@@ -56,7 +56,7 @@ function bubbleSort(nums) {
         }
     } 
     while(swap == true)
-
+    
     return nums
 }
 console.log("Answer: ", bubbleSort(numsRandomOrder), "Expected Answer :", expected);
