@@ -51,6 +51,3 @@ var isAnagram = function(s, t) {
 
 console.log(isAnagram(s1, t1));
 console.log(isAnagram(s2, t2));
-
-
-// Not Finished

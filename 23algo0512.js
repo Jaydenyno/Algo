@@ -28,32 +28,31 @@ const expected3 = [1, 6];
  * @returns {Array<number>} The two indexes of the numbers in the given nums
  *    that add up to the targetSum.
  */
-// function twoSum(nums, targetSum) {
-//     //Code goes here
-//     var arr = [];
-//     for (let x = 0; x < nums.length - 1; x++) {
-//         for (let y = x + 1; y < nums.length; y++) {
-//             if (nums[x] + nums[y] == targetSum) {
-//                 arr.push(x)
-//                 arr.push(y)
-//             }
-//         }
-//     }
-//     return arr;
-// }
-
 function twoSum(nums, targetSum) {
     //Code goes here
-    let map = {};
-    for (let x = 0;  x < nums.length; x++) {
-        let indexValue = nums[x];
-        let diff = targetSum - indexValue;
-        if (map.hasOwnProperty(diff)) {
-            return([map[diff], x])
+    var arr = [];
+    for (let x = 0; x < nums.length - 1; x++) {
+        for (let y = x + 1; y < nums.length; y++) {
+            if (nums[x] + nums[y] == targetSum) {
+                arr.push(x)
+                arr.push(y)
+            }
         }
-        map[indexValue] = x;
-        console.log(map)
     }
+    return arr;
+
+// function twoSum(nums, targetSum) {
+//     //Code goes here
+//     let map = {};
+//     for (let x = 0;  x < nums.length; x++) {
+//         let indexValue = nums[x];
+//         let diff = targetSum - indexValue;
+//         if (map.hasOwnProperty(diff)) {
+//             return([map[diff], x])
+//         }
+//         map[indexValue] = x;
+//         console.log(map)
+//     }
 }
 
 
